@@ -65,3 +65,30 @@ print('')
 print(type(nums))
 print(type(mynums))
 print('')
+
+print(type(nums))
+mylist = list([1, "Neil", True])
+print(mylist)
+
+# Tuples
+mytuple = tuple(("Dave", 42, True))
+
+anothertuple = (1, 4, 2, 8, 2, 2)
+
+print(mytuple)
+print(type(mytuple))
+print(type(anothertuple))
+
+newlist = list(mytuple)
+newlist.append("neil")
+newtuple = tuple(newlist)
+print(newtuple)
+
+print('')
+print("TUPLES")
+(one, *two, hey) = anothertuple
+print(one)
+print(two)
+print(hey)
+
+print("Tuple Count: " + str(anothertuple.count(4)))
